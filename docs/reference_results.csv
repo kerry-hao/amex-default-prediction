@@ -1,0 +1,7 @@
+source,validation,fold,features,amex_score,data_representation
+AmbrosM uploaded LightGBM Quickstart,stratified five folds,0,469,0.79374,Raddar denoised integer parquet
+AmbrosM uploaded LightGBM Quickstart,stratified five folds,1,469,0.79152,Raddar denoised integer parquet
+AmbrosM uploaded LightGBM Quickstart,stratified five folds,2,469,0.79357,Raddar denoised integer parquet
+AmbrosM uploaded LightGBM Quickstart,stratified five folds,3,469,0.79545,Raddar denoised integer parquet
+AmbrosM uploaded LightGBM Quickstart,stratified five folds,4,469,0.79488,Raddar denoised integer parquet
+AmbrosM uploaded LightGBM Quickstart,mean printed fold score,mean,469,0.79383,Raddar denoised integer parquet

@@ -1,0 +1,45 @@
+{
+  "experiment": "extended",
+  "seed": 42,
+  "paths": {
+    "train": "data/raw/train_data.csv",
+    "test": "data/raw/test_data.csv",
+    "labels": "data/raw/train_labels.csv",
+    "sample_submission": "data/raw/sample_submission.csv",
+    "features": "data/features/extended",
+    "output": "outputs/extended"
+  },
+  "data": {
+    "numeric_missing_sentinel": null,
+    "categorical_missing_sentinel": null
+  },
+  "features": {
+    "recipe": "extended"
+  },
+  "processing": {
+    "partitions": 32,
+    "memory_limit": "4GB",
+    "threads": 4
+  },
+  "cv": {
+    "folds": 5
+  },
+  "model": {
+    "n_estimators": 2000,
+    "learning_rate": 0.03,
+    "num_leaves": 95,
+    "min_child_samples": 2400,
+    "colsample_bytree": 0.19,
+    "reg_lambda": 50.0,
+    "max_bin": 511,
+    "n_jobs": 4
+  },
+  "training": {
+    "early_stopping_rounds": 150,
+    "log_period": 100
+  },
+  "prediction": {
+    "batch_size": 50000,
+    "ensemble": "mean_raw_margin_then_sigmoid"
+  }
+}
